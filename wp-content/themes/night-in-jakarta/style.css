@@ -446,3 +446,9 @@ input[type="reset"]:active {
   z-index: -1;
   opacity: .38;
 }
+
+p.frame{
+	background: #0071bc;
+	color: #fff;
+	padding: 15px;
+	}
