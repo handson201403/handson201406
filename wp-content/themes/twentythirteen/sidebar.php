@@ -15,7 +15,7 @@ if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 	<div id="tertiary" class="sidebar-container" role="complementary">
 		<div class="sidebar-inner">
 			<div class="widget-area">
-				
+				<?php wp_nav_menu( array('menu' => 'Sub Menu', 'container' => 'ul')); ?>
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>
 			</div><!-- .widget-area -->
 		</div><!-- .sidebar-inner -->
