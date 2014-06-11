@@ -94,10 +94,8 @@ function twentythirteen_setup() {
 	) );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus ( array (
-   'primary' => __( 'Navigation Menu', 'twentythirteen' ), // もとからあるメニュー
-   'secondary' => __( 'Sub Menu', 'twentythirteen' ) // 追加したメニュー
-	));
+	register_nav_menu( 'primary', __( 'Navigation Menu', 'twentythirteen' ) );
+	
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
 	 * "standard" posts and pages.
